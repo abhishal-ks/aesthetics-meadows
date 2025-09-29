@@ -1,3 +1,25 @@
+const imageArray = [
+  {
+    src: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80",
+    alt: "Art Deco Interior 1"
+  },
+  {
+    src: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80",
+    alt: "Art Deco Interior 2"
+  },
+  {
+    src: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+    alt: "Art Deco Interior 3"
+  },
+  {
+    src: "https://images.unsplash.com/photo-1690067323211-30ecd7522ca2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGFydCUyMGRlY28lMjBpbnRlcmlvcnxlbnwwfHwwfHx8MA%3D%3D",
+    alt: "Art Deco Interior 4"
+  },
+  {
+    src: "https://images.pexels.com/photos/96381/pexels-photo-96381.jpeg",
+    alt: "Art Deco Interior 5"
+  }
+];
 
 export default function ArtDeco() {
   return (
@@ -10,11 +32,14 @@ export default function ArtDeco() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-        <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80" alt="Art Deco Interior 1" className="w-full h-64 object-cover rounded-lg shadow" />
-        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80" alt="Art Deco Interior 2" className="w-full h-64 object-cover rounded-lg shadow" />
-        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80" alt="Art Deco Interior 3" className="w-full h-64 object-cover rounded-lg shadow" />
-        <img src="https://images.unsplash.com/photo-1690067323211-30ecd7522ca2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGFydCUyMGRlY28lMjBpbnRlcmlvcnxlbnwwfHwwfHx8MA%3D%3D" alt="Art Deco Interior 4" className="w-full h-64 object-cover rounded-lg shadow" />
-        <img src="https://images.pexels.com/photos/96381/pexels-photo-96381.jpeg" alt="Art Deco Interior 5" className="w-full h-64 object-cover rounded-lg shadow" />
+        {imageArray.map((image, index) => (
+          <img
+            key={index}
+            src={image.src}
+            alt={image.alt}
+            className="w-full h-64 object-cover rounded-lg shadow"
+          />
+        ))}
       </div>
 
       <div className="h-96 w-full bg-center bg-cover bg-fixed rounded-lg shadow-lg mb-6

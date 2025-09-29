@@ -1,3 +1,29 @@
+const minimalistImages = [
+  {
+    src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+    alt: "Minimalism Interior 1"
+  },
+  {
+    src: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80",
+    alt: "Minimalism Interior 2"
+  },
+  {
+    src: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80",
+    alt: "Minimalism Interior 3"
+  },
+  {
+    src: "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg",
+    alt: "Minimalism Interior 4"
+  },
+  {
+    src: "https://images.pexels.com/photos/262367/pexels-photo-262367.jpeg",
+    alt: "Minimalism Interior 5"
+  },
+  {
+    src: "https://images.pexels.com/photos/2631746/pexels-photo-2631746.jpeg",
+    alt: "Minimalism Interior 6"
+  }
+];
 
 export default function Minimalism() {
   return (
@@ -10,12 +36,14 @@ export default function Minimalism() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Minimalism Interior 1" className="w-full h-64 object-cover rounded-lg shadow" />
-        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" alt="Minimalism Interior 2" className="w-full h-64 object-cover rounded-lg shadow" />
-        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80" alt="Minimalism Interior 3" className="w-full h-64 object-cover rounded-lg shadow" />
-        <img src="https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg" alt="Minimalism Interior 4" className="w-full h-64 object-cover rounded-lg shadow" />
-        <img src="https://images.pexels.com/photos/262367/pexels-photo-262367.jpeg" alt="Minimalism Interior 5" className="w-full h-64 object-cover rounded-lg shadow" />
-        <img src="https://images.pexels.com/photos/2631746/pexels-photo-2631746.jpeg" alt="Minimalism Interior 6" className="w-full h-64 object-cover rounded-lg shadow" />
+        {minimalistImages.map((image, index) => (
+        <img 
+          key={index} 
+          src={image.src} 
+          alt={image.alt} 
+          className="w-full h-64 object-cover rounded-lg shadow" 
+        />
+      ))}
       </div>
 
       <div className="h-96 w-full bg-top bg-cover bg-fixed rounded-lg shadow-lg mb-6
