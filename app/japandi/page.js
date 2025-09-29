@@ -1,0 +1,38 @@
+
+export default function Japandi() {
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center text-center px-4 pt-8 bg-green-50">
+
+      <h1 className="text-4xl font-bold mb-4">Japandi</h1>
+      <p className="text-lg text-gray-700 max-w-xl mb-4">
+        Japandi blends Japanese and Scandinavian design. It’s minimalist, warm, and functional, with natural materials and muted colors. Here are some inspiring examples:
+      </p>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80" alt="Japandi Interior 1" className="w-full h-64 object-cover rounded-lg shadow" />
+        <img src="https://images.unsplash.com/photo-1503389152951-9c3d0e3c1c73?auto=format&fit=crop&w=800&q=80" alt="Japandi Interior 2" className="w-full h-64 object-cover rounded-lg shadow" />
+        <img src="https://images.unsplash.com/photo-1465101178521-c1a6f3b37a52?auto=format&fit=crop&w=800&q=80" alt="Japandi Interior 3" className="w-full h-64 object-cover rounded-lg shadow" />
+      </div>
+
+      <div className="h-[65vh] w-full bg-bottom bg-cover bg-fixed rounded-lg shadow-lg mb-6
+      bg-[url('https://images.pexels.com/photos/8143666/pexels-photo-8143666.jpeg')]
+      flex items-center justify-center">
+        <h1 className="text-xl text-gray-800">Japandi</h1>
+      </div>
+
+      <div className="max-w-xl text-left mx-auto mb-6">
+        <h2 className="text-xl font-semibold mb-2">Japandi Design Elements</h2>
+        <ul className="list-disc list-inside text-gray-700 mb-2">
+          <li>Natural materials like wood and stone</li>
+          <li>Muted, earthy color palettes</li>
+          <li>Functional, minimalist furniture</li>
+          <li>Balance of warmth and simplicity</li>
+        </ul>
+        <h2 className="text-xl font-semibold mb-2">Why Japandi?</h2>
+        <p className="text-gray-700">Japandi combines the best of Japanese and Scandinavian design, creating interiors that are both tranquil and functional.</p>
+      </div>
+
+    </div>
+  );
+}
+

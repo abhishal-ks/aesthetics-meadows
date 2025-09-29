@@ -1,103 +1,72 @@
-import Image from "next/image";
+                                                    // किं अहम् तत् ?
+import Link from "next/link";
+
+const themes = [
+  {
+    name: "Minimalism",
+    href: "/minimalism",
+    color: "bg-white",
+    description: "Simplicity, clean lines, and uncluttered spaces.",
+    img: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    name: "Art Deco",
+    href: "/art-deco",
+    color: "bg-yellow-100",
+    description: "Bold geometric shapes, rich colors, and luxury.",
+    img: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    name: "Japandi",
+    href: "/japandi",
+    color: "bg-green-100",
+    description: "Minimalist, warm, and functional blend of Japanese and Scandinavian design.",
+    img: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+  }
+];
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="min-h-screen flex flex-col items-center justify-center text-center px-1.5 pt-8 bg-gradient-to-br from-gray-50 to-gray-200">
+      <h1 className="text-5xl font-bold mb-4">Aesthetics Meadows</h1>
+      <blockquote className="italic text-gray-500 mb-6">“Design is intelligence made visible.” – Alina Wheeler</blockquote>
+      <p className="text-lg text-gray-600 max-w-xl mb-8">
+        Discover and explore popular interior design aesthetics. Click a theme to to bask into it!
+      </p>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+      {/* 👇 Parallax Section */}
+      <div
+        className="w-full h-[50vh] md:h-96 bg-fixed bg-center bg-cover mb-4 rounded-lg shadow-sm
+        bg-[url('https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg')]
+        "
+      ></div>
+
+      <div className="h-0.5 w-[90vw] bg-gradient-to-r from-red-300 to-sky-300 shadow-lg my-6"></div>
+
+      <div className="w-full flex justify-start items-start px-4">
+        <h2
+        className="text-3xl font-semibold my-10 bg-gradient-to-r from-red-300 to-sky-300 px-3 py-2 rounded-lg shadow-lg"
+        data-aos="fade-right"
+            data-aos-delay="200"
+        >Bask into the Parallels...</h2>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10 px-4">
+        {themes.map((theme) => (
+          <Link
+            key={theme.name}
+            href={theme.href}
+            className={`flex flex-col items-center justify-center p-6 rounded-lg shadow-lg transition hover:scale-105 duration-300 ${theme.color}`}
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+            <img src={theme.img} alt={theme.name + " preview"} className="w-full h-40 object-cover rounded mb-4 shadow" />
+            <span className="text-2xl font-semibold mb-2">{theme.name}</span>
+            <span className="text-gray-700 mb-2">{theme.description}</span>
+            <span className="text-sm text-blue-600 underline">Explore</span>
+          </Link>
+        ))}
+      </div>
+    </main>
   );
 }
