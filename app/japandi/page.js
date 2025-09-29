@@ -10,12 +10,13 @@ export default function Japandi() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
         <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80" alt="Japandi Interior 1" className="w-full h-64 object-cover rounded-lg shadow" />
-        <img src="https://images.unsplash.com/photo-1503389152951-9c3d0e3c1c73?auto=format&fit=crop&w=800&q=80" alt="Japandi Interior 2" className="w-full h-64 object-cover rounded-lg shadow" />
-        <img src="https://images.unsplash.com/photo-1465101178521-c1a6f3b37a52?auto=format&fit=crop&w=800&q=80" alt="Japandi Interior 3" className="w-full h-64 object-cover rounded-lg shadow" />
+        <img src="https://images.pexels.com/photos/8251243/pexels-photo-8251243.jpeg" alt="Japandi Interior 2" className="w-full h-64 object-cover rounded-lg shadow" />
+        <img src="https://images.pexels.com/photos/8251487/pexels-photo-8251487.jpeg" alt="Japandi Interior 3" className="w-full h-64 object-cover rounded-lg shadow" />
+        <img src="https://images.pexels.com/photos/8251592/pexels-photo-8251592.jpeg" alt="Japandi Interior 4" className="w-full h-64 object-cover rounded-lg shadow" />
       </div>
 
       <div className="h-[65vh] w-full bg-bottom bg-cover bg-fixed rounded-lg shadow-lg mb-6
-      bg-[url('https://images.pexels.com/photos/8143666/pexels-photo-8143666.jpeg')]
+      bg-[url('https://images.pexels.com/photos/29383010/pexels-photo-29383010.jpeg')]
       flex items-center justify-center">
         <h1 className="text-xl text-gray-800">Japandi</h1>
       </div>

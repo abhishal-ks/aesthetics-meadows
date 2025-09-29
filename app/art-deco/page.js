@@ -14,7 +14,7 @@ export default function ArtDeco() {
         <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80" alt="Art Deco Interior 2" className="w-full h-64 object-cover rounded-lg shadow" />
         <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80" alt="Art Deco Interior 3" className="w-full h-64 object-cover rounded-lg shadow" />
         <img src="https://images.unsplash.com/photo-1690067323211-30ecd7522ca2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGFydCUyMGRlY28lMjBpbnRlcmlvcnxlbnwwfHwwfHx8MA%3D%3D" alt="Art Deco Interior 4" className="w-full h-64 object-cover rounded-lg shadow" />
-        <img src="https://images.unsplash.com/photo-1503389152951-9c3d0e3c1c73?auto=format&fit=crop&w=800&q=80" alt="Art Deco Interior 5" className="w-full h-64 object-cover rounded-lg shadow" />
+        <img src="https://images.pexels.com/photos/96381/pexels-photo-96381.jpeg" alt="Art Deco Interior 5" className="w-full h-64 object-cover rounded-lg shadow" />
       </div>
 
       <div className="h-96 w-full bg-center bg-cover bg-fixed rounded-lg shadow-lg mb-6
