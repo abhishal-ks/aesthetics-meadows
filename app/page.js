@@ -30,24 +30,24 @@ export default function Home() {
     <main className="min-h-screen flex flex-col items-center justify-center text-center px-1.5 pt-8 bg-gradient-to-br from-gray-50 to-gray-200">
       <h1 className="text-5xl font-bold mb-4">Aesthetics Meadows</h1>
       <blockquote className="italic text-gray-500 mb-6">“Design is intelligence made visible.” – Alina Wheeler</blockquote>
-      <p className="text-lg text-gray-600 max-w-xl mb-8">
+      <p className="text-lg text-gray-600 max-w-xl mb-6">
         Discover and explore popular interior design aesthetics. Click a theme to to bask into it!
       </p>
 
       {/* 👇 Parallax Section */}
       <div
-        className="w-full h-[50vh] md:h-96 bg-fixed bg-center bg-cover mb-4 rounded-lg shadow-sm
+        className="w-full h-[50vh] md:h-[55vh] bg-fixed bg-center bg-cover mb-6 rounded-lg shadow-sm
         bg-[url('https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg')]
         "
       ></div>
 
-      <div className="h-0.5 w-[90vw] bg-gradient-to-r from-red-300 to-sky-300 shadow-lg my-6"></div>
+      <div className="h-0.5 w-[90vw] bg-gradient-to-r from-red-300 to-sky-300 shadow-lg my-1"></div>
 
       <div className="w-full flex justify-start items-start px-4">
         <h2
         className="text-3xl font-semibold my-10 bg-gradient-to-r from-red-300 to-sky-300 px-3 py-2 rounded-lg shadow-lg"
         data-aos="fade-right"
-            data-aos-delay="200"
+            data-aos-delay="100"
         >Bask into the Parallels...</h2>
       </div>
 
@@ -58,7 +58,7 @@ export default function Home() {
             href={theme.href}
             className={`flex flex-col items-center justify-center p-6 rounded-lg shadow-lg transition hover:scale-105 duration-300 ${theme.color}`}
             data-aos="fade-up"
-            data-aos-delay="200"
+            data-aos-delay="100"
           >
             <img src={theme.img} alt={theme.name + " preview"} className="w-full h-40 object-cover rounded mb-4 shadow" />
             <span className="text-2xl font-semibold mb-2">{theme.name}</span>
