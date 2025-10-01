@@ -28,21 +28,21 @@ export default function Japandi() {
         Japandi blends Japanese and Scandinavian design. It’s minimalist, warm, and functional, with natural materials and muted colors. Here are some inspiring examples:
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6 w-full md:w-[80vw] ">
         {japandiImages.map((image, index) => (
           <div key={index} className="relative w-full h-64">
             <Image
               src={image.src}
               alt={image.alt}
               fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
+              // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
               className="object-cover rounded-lg shadow"
             />
           </div>
         ))}
       </div>
 
-      <div className="h-[65vh] w-full bg-bottom bg-cover bg-fixed rounded-lg shadow-lg mb-6
+      <div className="h-[65vh] w-full bg-bottom bg-cover bg-fixed rounded-lg mb-6
       bg-[url('https://images.pexels.com/photos/29383010/pexels-photo-29383010.jpeg')]
       flex items-center justify-center">
         <h1 className="text-xl text-gray-800">Japandi</h1>

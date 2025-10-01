@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const imageArray = [
   {
     src: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80",
@@ -31,18 +33,20 @@ export default function ArtDeco() {
         Art Deco features bold geometric shapes, rich colors, and luxurious materials. It’s glamorous, elegant, and visually striking. Here are some inspiring examples:
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6 w-full md:w-[80vw]">
         {imageArray.map((image, index) => (
-          <img
-            key={index}
+          <div key={index} className="relative w-full h-64">
+          <Image
             src={image.src}
             alt={image.alt}
+            fill
             className="w-full h-64 object-cover rounded-lg shadow"
           />
+          </div>
         ))}
       </div>
 
-      <div className="h-96 w-full bg-center bg-cover bg-fixed rounded-lg shadow-lg mb-6
+      <div className="h-96 w-full bg-center bg-cover bg-fixed rounded-lg mb-6
       bg-[url('https://images.pexels.com/photos/335253/pexels-photo-335253.jpeg')]
       flex items-center justify-center">
         <h1 className="text-xl text-amber-300">ArtDeco</h1>
