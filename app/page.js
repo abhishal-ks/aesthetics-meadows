@@ -1,5 +1,6 @@
-                                                    // किं अहम् तत् ?
+// किं अहम् तत् ?
 import Link from "next/link";
+import Image from "next/image";
 
 const themes = [
   {
@@ -45,9 +46,9 @@ export default function Home() {
 
       <div className="w-full flex justify-start items-start px-4">
         <h2
-        className="text-3xl font-semibold my-10 bg-gradient-to-r from-red-300 to-sky-300 px-3 py-2 rounded-lg shadow-lg"
-        data-aos="fade-right"
-            data-aos-delay="100"
+          className="text-3xl font-semibold my-10 bg-gradient-to-r from-red-300 to-sky-300 px-3 py-2 rounded-lg shadow-lg"
+          data-aos="fade-right"
+          data-aos-delay="100"
         >Bask into the Parallels...</h2>
       </div>
 
@@ -60,7 +61,14 @@ export default function Home() {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <img src={theme.img} alt={theme.name + " preview"} className="w-full h-40 object-cover rounded mb-4 shadow" />
+            <div className="relative w-full h-40 mb-4 rounded overflow-hidden shadow">
+              <Image
+                src={theme.img}
+                alt={theme.name + " preview"}
+                fill
+                className="w-full h-40 object-cover rounded mb-4 shadow"
+              />
+            </div>
             <span className="text-2xl font-semibold mb-2">{theme.name}</span>
             <span className="text-gray-700 mb-2">{theme.description}</span>
             <span className="text-sm text-blue-600 underline">Explore</span>
