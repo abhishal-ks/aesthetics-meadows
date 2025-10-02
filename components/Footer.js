@@ -38,14 +38,14 @@ const Footer = () => {
                         </a>
 
                         {/* GitHub */}
-                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-black transition">
+                        <a href="https://github.com/abhishal-ks" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-black transition">
                             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12 0a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1 2-.8 2.4-1 .1-.7.4-1.2.7-1.5-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.3 11.3 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.1 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.8 1.1.8 2.3v3.4c0 .3.2.7.8.6A12 12 0 0 0 12 0Z" />
                             </svg>
                         </a>
 
                         {/* LinkedIn */}
-                        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-700 transition">
+                        <a href="https://www.linkedin.com/in/abhishal-sharma-22b606209/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-700 transition">
                             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.48 1.1 2.48 2.5zM0 8.98h5V24H0V8.98zM7.5 8.98h4.6v2.1h.1c.6-1.1 2-2.2 4.1-2.2 4.4 0 5.2 2.9 5.2 6.6V24h-5v-7.6c0-1.8 0-4.2-2.6-4.2s-3 2-3 4v7.8h-5V8.98z" />
                             </svg>
